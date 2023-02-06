@@ -1,0 +1,43 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+  }
+  
+  .modal-body {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    background: var(--tsk);
+    height: fit-content;    
+  }
+  
+  .modal-body>*{
+    margin-bottom:10px;
+  }
+
+    .addtask-field {
+    display: block;
+    width: calc(100% - 10px);
+    margin-bottom:10px;
+  }
+
+  .addtask-textarea {
+    width: calc(100% - 10px);
+    min-height:200px;
+  }
+
+  .addtask {
+    float:right;
+  }
+
+  .close-tab {
+    float:right;
+    cursor:pointer;
+  }

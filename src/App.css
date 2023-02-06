@@ -1,0 +1,54 @@
+.App {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.anonymous {
+    text-align: center;
+    width: 100vw;
+    color: var(--brd);
+    font-size: 200%;
+    margin-top: 40vh;
+}
+
+.route-container {
+    position: relative;
+    top: 10px;
+    background: var(--tsk);
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    width: calc(100vw - 60px);
+    height: calc(100vh - 170px);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.inverse {
+    color:var(--tsk);
+}
+
+.placeholder {
+    background: var(--dis);
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: var(--tsk);
+}
+
+.data {
+    margin-left: 20px;
+}
+
+.route-container>*{
+    margin-bottom:10px;
+}
+
+@media screen and (max-width: 768px) {
+ 
+    .App {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}

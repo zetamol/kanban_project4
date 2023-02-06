@@ -1,0 +1,48 @@
+.userMenu {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.userAvatar img{
+    width: 40px;
+    border-radius: 100%;
+}
+
+.notLogged {
+    min-width: 100px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: var(--sec);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuList {
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    min-width: 150px;
+    background: var(--brd);
+    color: var(--txt);
+    border-radius:4px;
+}
+
+.menuList>ul{
+    padding: 4px;
+    margin: 0 auto;
+}
+
+.menuList>ul li {
+    list-style: none;
+    cursor: pointer;
+    padding:5px;
+}
+
+.menuList>ul li:hover{
+    background:var(--tsk);
+}
