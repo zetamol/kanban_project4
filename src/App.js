@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Switch, Route, useParams, Link } from "react-r
 import Parser from 'html-react-parser'
 
 
-export default function app() {
+export default function App() {
 
  let stringToParse
  if (window.localStorage.getItem('todos')){ 
@@ -65,7 +65,7 @@ function RenderTask() {
            <RenderTask/>
         </Route>
         <Route path="/">
-         <div className="app">
+         <div className="App">
            {state.map(item => <TaskList key={item.title} name={item.title} data={item.issues} />)}
          </div>
          </Route>
